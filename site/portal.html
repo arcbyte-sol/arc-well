@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Client Portal — Arcwell</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0e1a17">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="portal">
+<header class="site-header" id="site-header"></header>
+<main>
+  <div class="container portal-login" id="portal-login">
+    <div class="panel">
+      <span class="eyebrow">Client portal</span>
+      <h3 style="margin-top:12px;font-family:var(--serif);font-weight:400;font-size:2.4rem">Welcome back</h3>
+      <p>Sign in to see your roadmap, KPIs and messages.</p>
+      <form class="form" novalidate>
+        <div class="field"><label for="p-email">Work email</label><input id="p-email" name="email" type="email" data-rule="email" autocomplete="username"><div class="msg">Enter a valid email</div></div>
+        <div class="field"><label for="p-pass">Password</label><input id="p-pass" name="password" type="password" data-rule="required" autocomplete="current-password"><div class="msg">Enter your password</div></div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="button" class="btn btn-ghost" id="demo-fill">Use demo account</button>
+        <p class="demo-note">Demo portal: any email and password work, and nothing is stored or sent.</p>
+      </form>
+    </div>
+  </div>
+
+  <div class="container dash-page" id="dashboard">
+    <div class="dash-head">
+      <div><span class="eyebrow" id="u-company">Company</span><h1 class="serif" id="hello" style="margin-top:8px">Welcome</h1></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn btn-ghost" id="download-report">Download Q4 report</button>
+        <button class="btn btn-primary" id="logout">Sign out</button>
+      </div>
+    </div>
+    <div class="dash-grid">
+      <div class="tile"><small>Annual savings found</small><b>$1.24M</b><span class="up">▲ $180K this month</span></div>
+      <div class="tile"><small>Delivery cycle time</small><b>3.1 days</b><span class="up">▼ 41% vs. baseline</span></div>
+      <div class="tile"><small>Operating margin</small><b>21.6%</b><span class="up">▲ 7.2 pts</span></div>
+      <div class="tile"><small>Roadmap complete</small><b id="task-pct">0%</b><span class="up">On track for day 90</span></div>
+
+      <div class="tile span-2">
+        <h3>Roadmap progress</h3>
+        <div style="margin-top:16px;display:grid;gap:16px;font-size:.9rem">
+          <div>Warehouse flow redesign <span style="float:right">100%</span><div class="bar"><i data-w="100%" style="width:0"></i></div></div>
+          <div>Shift planning automation <span style="float:right">80%</span><div class="bar"><i data-w="80%" style="width:0"></i></div></div>
+          <div>Supplier renegotiation <span style="float:right">55%</span><div class="bar"><i data-w="55%" style="width:0"></i></div></div>
+          <div>Pricing model update <span style="float:right">30%</span><div class="bar"><i data-w="30%" style="width:0"></i></div></div>
+        </div>
+      </div>
+      <div class="tile span-2">
+        <h3>Your action items</h3>
+        <div id="tasks" style="margin-top:8px"></div>
+      </div>
+
+      <div class="tile span-2">
+        <h3>Revenue vs. plan</h3>
+        <svg viewBox="0 0 400 160" style="width:100%;height:180px;margin-top:12px" preserveAspectRatio="none">
+          <g stroke="var(--line)"><line x1="0" x2="400" y1="40" y2="40"/><line x1="0" x2="400" y1="90" y2="90"/><line x1="0" x2="400" y1="140" y2="140"/></g>
+          <path d="M0 140 L67 128 L133 120 L200 104 L267 92 L333 76 L400 70" stroke="#8b958f" stroke-dasharray="5 6" stroke-width="2" fill="none"/>
+          <path d="M0 138 L67 122 L133 110 L200 86 L267 70 L333 48 L400 28" stroke="#23413a" stroke-width="3" fill="none"/>
+        </svg>
+        <small style="color:var(--muted)">— Actual &nbsp; - - Plan</small>
+      </div>
+      <div class="tile span-2">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px"><span class="avatar">MC</span><div><b style="font-size:1rem">Maya Chen</b><small>Your lead consultant · Online</small></div></div>
+        <div class="msg-list" id="msgs"></div>
+        <div class="typing" id="typing"></div>
+        <form id="chat-form" class="newsletter" style="background:var(--paper)"><input name="msg" placeholder="Write a message…" aria-label="Message" autocomplete="off"><button class="btn btn-primary" type="submit">Send</button></form>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>

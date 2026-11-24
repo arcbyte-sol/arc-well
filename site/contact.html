@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Arcwell — Book a free discovery call</title>
+  <meta name="description" content="Arcwell helps growing companies fix operations, sharpen strategy and scale profitably. Clear plans, transparent pricing, measurable results in 90 days.">
+  <meta property="og:title" content="Arcwell Consulting — Growth without the guesswork">
+  <meta property="og:description" content="Strategy and operations consulting with measurable results in 90 days.">
+  <meta property="og:image" content="og.png">
+  <meta name="theme-color" content="#0e1a17">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="contact">
+<header class="site-header" id="site-header"></header>
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's build your <em class="serif" style="color:var(--moss)">next chapter.</em></h1>
+      <p class="lead" style="margin-top:20px">Book a call, send a message or visit us. A partner replies to every inquiry within 24 hours.</p>
+    </div>
+  </section>
+  <!-- Booking + contact -->
+  <section id="book" style="padding-top:24px">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Get started</span><h2>Let's talk about your <em class="serif">next stage</em></h2></div></div>
+      <div class="contact-grid">
+        <div class="panel reveal" id="booking">
+          <div class="booking-ui">
+            <h3>Book a free discovery call</h3><p>30 minutes with a partner. No pitch, just a clear view of where to start.</p>
+            <div class="days"></div>
+            <div class="slots"></div>
+            <form class="form" novalidate>
+              <div class="row">
+                <div class="field"><label for="b-name">Full name</label><input id="b-name" name="name" data-rule="required" autocomplete="name"><div class="msg">Please enter your name</div></div>
+                <div class="field"><label for="b-email">Work email</label><input id="b-email" name="email" type="email" data-rule="email" autocomplete="email"><div class="msg">Enter a valid email</div></div>
+              </div>
+              <div class="field"><label for="b-topic">What do you want to discuss?</label><input id="b-topic" name="topic" placeholder="e.g. Pricing strategy"></div>
+              <button type="submit" class="btn btn-primary">Confirm booking</button>
+            </form>
+          </div>
+          <div class="success-box">
+            <div class="check">✓</div>
+            <h3>You're booked!</h3>
+            <p style="margin-top:8px"><b data-when></b></p>
+            <p>Confirmation <b data-id></b> was sent to <span data-email></span>.</p>
+            <button class="btn btn-ghost" style="margin-top:20px" data-rebook>Book another time</button>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Send us a message</h3><p>Prefer writing? Tell us a bit about your company and we'll reply within 24 hours.</p>
+          <form class="form" data-contact novalidate>
+            <div class="row">
+              <div class="field"><label for="c-name">Full name</label><input id="c-name" name="name" data-rule="required" autocomplete="name"><div class="msg">Please enter your name</div></div>
+              <div class="field"><label for="c-email">Work email</label><input id="c-email" name="email" type="email" data-rule="email" autocomplete="email"><div class="msg">Enter a valid email</div></div>
+            </div>
+            <div class="field"><label for="c-size">Company size</label><select id="c-size" name="size" data-rule="required"><option value="">Select…</option><option>1–20</option><option>21–100</option><option>101–500</option><option>500+</option></select><div class="msg">Please choose a size</div></div>
+            <div class="field"><label for="c-msg">How can we help?</label><textarea id="c-msg" name="message" data-rule="min"></textarea><div class="msg">Please write at least 20 characters</div></div>
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="services">
+        <div class="service reveal"><h3>San Francisco</h3><p>350 Market St, Suite 1200<br>San Francisco, CA 94105</p><ul><li>HQ</li><li>Mon–Fri 9–6 PT</li></ul></div>
+        <div class="service reveal"><h3>New York</h3><p>88 Greene St, 4th Floor<br>New York, NY 10012</p><ul><li>Mon–Fri 9–6 ET</li></ul></div>
+        <div class="service feature reveal"><h3>Talk to us now</h3><p>hello@arcwell.co<br>+1 (415) 555-0142</p><ul><li>Avg. reply: 3 hours</li></ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

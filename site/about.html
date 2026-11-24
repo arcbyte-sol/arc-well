@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Arcwell — Senior consultants who stay until it works</title>
+  <meta name="description" content="Arcwell is a team of senior operators and strategists helping growing companies scale profitably since 2014.">
+  <meta name="theme-color" content="#0e1a17">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .story { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+    .story p { color: var(--muted); margin-bottom: 16px; font-size: 1.05rem; }
+    .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .value { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }
+    .value b { font-family: var(--serif); font-size: 2.6rem; font-weight: 400; color: var(--moss); display: block; line-height: 1; margin-bottom: 18px; }
+    .value p { color: var(--muted); margin-top: 8px; font-size: .95rem; }
+    .team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .member { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: transform .3s, box-shadow .3s; }
+    .member:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .portrait { aspect-ratio: 1; display: grid; place-items: center; font-family: var(--serif); font-size: 4.5rem; }
+    .member div:last-child { padding: 18px 20px; }
+    .member small { color: var(--muted); }
+    .timeline { display: grid; gap: 0; border-left: 1px solid #33463f; margin-left: 8px; }
+    .tl { padding: 0 0 36px 32px; position: relative; }
+    .tl::before { content: ""; position: absolute; left: -7px; top: 6px; width: 13px; height: 13px; border-radius: 50%; background: var(--lime); }
+    .tl b { font-family: var(--serif); font-size: 1.8rem; font-weight: 400; color: var(--lime); }
+    .tl p { color: #9fb0aa; max-width: 52ch; }
+    @media (max-width: 980px) { .story, .values { grid-template-columns: 1fr; } .team { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body data-page="about">
+<header class="site-header" id="site-header"></header>
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="eyebrow">About Arcwell</span>
+      <h1>Senior people. <em class="serif" style="color:var(--moss)">Real results.</em></h1>
+      <p class="lead" style="margin-top:20px">We started Arcwell because growing companies deserve big-firm thinking without the big-firm overhead, juniors and 200-page decks.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:24px">
+    <div class="container story">
+      <div class="reveal">
+        <div class="dash" style="padding:32px">
+          <div class="kpis">
+            <div class="kpi"><small>Founded</small><b>2014</b></div>
+            <div class="kpi"><small>Consultants</small><b>38</b></div>
+            <div class="kpi"><small>Offices</small><b>3</b></div>
+          </div>
+          <div class="chart"><div class="chart-head"><span>Clients served per year</span></div>
+            <svg viewBox="0 0 400 150" preserveAspectRatio="none"><g fill="#c8f169">
+              <rect x="10" y="125" width="40" height="25" rx="4"/><rect x="65" y="112" width="40" height="38" rx="4"/><rect x="120" y="100" width="40" height="50" rx="4"/><rect x="175" y="84" width="40" height="66" rx="4"/><rect x="230" y="64" width="40" height="86" rx="4"/><rect x="285" y="40" width="40" height="110" rx="4"/><rect x="340" y="14" width="40" height="136" rx="4"/></g></svg>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Our story</span>
+        <h2 style="margin:12px 0 24px">Built by operators, <em class="serif">for operators</em></h2>
+        <p>Our founders spent years inside top consulting firms and then ran operations at fast-growing companies. They saw the same gap from both sides: great advice that never got implemented.</p>
+        <p>So Arcwell works differently. Every engagement is led by a senior partner, scoped to measurable KPIs and delivered alongside your team. We only call it done when the numbers move.</p>
+        <a href="contact.html#book" class="btn btn-primary" style="margin-top:12px">Work with us →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">What we believe</span><h2>Three rules we <em class="serif">never break</em></h2></div></div>
+      <div class="values">
+        <div class="value reveal"><b>01</b><h3>Outcomes over output</h3><p>We measure success by your KPIs, not by hours billed or slides delivered.</p></div>
+        <div class="value reveal"><b>02</b><h3>Plain language</h3><p>No jargon, no buzzwords. If we can't explain it simply, we haven't understood it.</p></div>
+        <div class="value reveal"><b>03</b><h3>Stay until it works</h3><p>We build the plan with your team and stay to put it into practice.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" style="padding-top:0">
+    <div class="container">
+      <div class="section-head reveal"><div><span class="eyebrow">Leadership</span><h2>The people you'll <em class="serif">work with</em></h2></div></div>
+      <div class="team">
+        <div class="member reveal"><div class="portrait" style="background:var(--lime)">MC</div><div><h3>Maya Chen</h3><small>Managing Partner · Strategy</small></div></div>
+        <div class="member reveal"><div class="portrait" style="background:var(--moss);color:var(--paper)">JO</div><div><h3>James Okafor</h3><small>Partner · Operations</small></div></div>
+        <div class="member reveal"><div class="portrait" style="background:#e7e2d6">PS</div><div><h3>Priya Shah</h3><small>Partner · Finance & FP&A</small></div></div>
+        <div class="member reveal"><div class="portrait" style="background:#ffd2c4">LB</div><div><h3>Lucas Berg</h3><small>Partner · Digital & AI</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container story">
+      <div class="reveal"><span class="eyebrow">Milestones</span><h2 style="margin-top:12px">Ten years of <em class="serif" style="color:var(--lime)">compounding</em></h2></div>
+      <div class="timeline reveal">
+        <div class="tl"><b>2014</b><h3>Founded in San Francisco</h3><p>Two partners, one client and a whiteboard.</p></div>
+        <div class="tl"><b>2018</b><h3>100th client</h3><p>Opened our New York office and launched the Growth Sprint.</p></div>
+        <div class="tl"><b>2022</b><h3>Client portal launched</h3><p>Live KPI dashboards for every engagement.</p></div>
+        <div class="tl"><b>2026</b><h3>240+ companies advised</h3><p>London office opened, with a team of 38 senior consultants.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container" style="margin-top:96px">
+    <div class="cta-band reveal">
+      <div><h2>Ready for your <em class="serif">next stage?</em></h2><p style="margin-top:10px">Book a free 30-minute discovery call with a partner.</p></div>
+      <div><a href="contact.html#book" class="btn btn-primary">Book a discovery call →</a></div>
+    </div>
+  </div>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
